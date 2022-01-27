@@ -1,13 +1,10 @@
 import React, { Component } from "react";
 
 class ColorClass extends Component {
-  constructor(props) {
-    super(props);
-    // state의 초깃값 설정하기
-    this.state = {
-      likes: 0,
-      unlikes: 0,
-    };
+ 
+  state = {
+    likes: 0,
+    unlikes: 0,
   }
   render() {
     const { likes, unlikes } = this.state;
@@ -16,12 +13,18 @@ class ColorClass extends Component {
         <span>좋아요</span>
         <button
           onClick={() => {
-            this.setState({ unlikes: unlikes + 1 });
-            this.setState({ unlikes: unlikes + 1 });
+            this.setState({
+              likes : likes + 1
+            },
+            () => {
+                console.log('좋아요를 누른 뒤 입니다.');
+            });
+            
           }}
         >
           {likes}
         </button>
+
         <span>싫어요</span>
         <button
           onClick={() => {

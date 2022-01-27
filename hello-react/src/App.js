@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import NewCool from "./Component";
 import ColorClass from "./ColorClass";
+import Say from './Say';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         children 박스
       </NewCool>
       <ColorClass color="red" />
+      <Say />
     </div>
   );
 };
