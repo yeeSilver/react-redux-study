@@ -1,5 +1,6 @@
+// @import '~include-media/dist/include-media';
+// @import '~open-color/open-color';
 
-@import './styles/utils.scss';
 
 .SassComponent {
   display: flex;
@@ -39,5 +40,6 @@
       // .box에 마우스를 올렸을 때
       background: black;
     }
+   
   }
 }
